@@ -3,8 +3,8 @@ import java.util.ArrayList;
 class Bank{
     private ArrayList<Customer> customers = new ArrayList<>();
 
-    public void createAccount(int accountNumber,String name,double balance,String accountType, String email){
-        customers.add(new Customer(accountNumber, name, balance, accountType, email));
+    public void createAccount(String name,double balance,String accountType, String email){
+        customers.add(new Customer(name, balance, accountType, email));
     }
 
     public void deposit(int accountNumber,double amt){

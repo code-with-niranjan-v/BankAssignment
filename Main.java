@@ -12,8 +12,6 @@ public class Main {
         int option = Integer.parseInt(sc.nextLine());
         switch(option){
             case 1:{
-                System.out.println("Enter Account Number: ");
-                int accountNumber = Integer.parseInt(sc.nextLine());
                 System.out.println("Enter Name: ");
                 String name = sc.nextLine();
                 System.out.println("Enter Balance: ");
@@ -23,7 +21,7 @@ public class Main {
                 System.out.println("Enter Email: ");
                 String email = sc.nextLine();
 
-                b1.createAccount(accountNumber, name, balance, accountType, email);
+                b1.createAccount(name, balance, accountType, email);
                 System.out.println("Account Created SuccessFully!");
             }
             break;
